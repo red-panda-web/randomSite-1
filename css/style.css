@@ -753,7 +753,7 @@ h2 {
           align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 100px 0 75px 0;
+  padding: 100px 0 77px 0;
 }
 
 .cardItem {
@@ -791,11 +791,117 @@ h2 {
   letter-spacing: 0.1em;
   color: #191919;
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 18px 0 0 0;
 }
 
 .cardItem__text {
   font-size: 16px;
+}
+
+/*Cекция testimonials */
+
+.testimonials {
+  background-color: #10c9c3;
+}
+
+.testimonials__body {
+  padding: 175px 0 48px 0;
+}
+
+.testimonials__sliderWrapper {
+  margin-bottom: 117px;
+}
+
+.testimonials__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonials__quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 810px;
+}
+
+.testimonials__quote blockquote {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.testimonials__quote figcaption {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 36px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  margin-top: 17px;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+/* Секция Clients */
+
+.clients__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 65px 0;
+}
+
+.client {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  margin: 20px;
+}
+
+.client img {
+  max-width: 100%;
+  height: auto;
+}
+
+.client:hover {
+  opacity: 1;
 }
 
 @media (max-width: 1200px) {
@@ -859,6 +965,10 @@ h2 {
 }
 
 @media (max-width: 795px) {
+  .container {
+    max-width: none;
+  }
+
   /* Хэдэр*/
 
   .header__menu {
@@ -942,6 +1052,24 @@ h2 {
   .cardItem {
     -ms-flex-preferred-size: 33.333%;
         flex-basis: 33.333%;
+  }
+
+  /*Cекция testimonials */
+
+  .testimonials__body {
+    padding-top: 100px;
+  }
+
+  .testimonials__sliderWrapper {
+    margin-bottom: 50px;
+  }
+
+  /* Секция Clients */
+
+  .clients__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   /* Футер*/
@@ -1052,6 +1180,18 @@ h2 {
         flex-basis: 50%;
   }
 
+  /*Cекция testimonials */
+
+  .testimonials__quote blockquote {
+    font-size: 20px;
+  }
+
+  /* Секция Clients */
+
+  .clients__body {
+    padding: 35px 0;
+  }
+
   /*Футер*/
 
   .footer__menu-col2 {
@@ -1116,6 +1256,12 @@ h2 {
 
   .cardItem:nth-child(n) {
     margin-top: 20px;
+  }
+
+  /*Cекция testimonials */
+
+  .testimonials__body {
+    padding: 50px 0;
   }
 
   /*Футер*/

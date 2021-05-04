@@ -5,8 +5,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css">
    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/style.min.css">
    <title>Main page</title>
 </head>
 
@@ -238,6 +239,58 @@
          </div>
       </section>
 
+      <section class="testimonials">
+         <div class="container">
+            <div class="testimonials__body">
+               <div class="swiper-container testimonials__slider">
+                  <div class="swiper-wrapper testimonials__sliderWrapper">
+                     <div class="swiper-slide testimonials__item">
+                        <figure class="testimonials__quote">
+                           <blockquote>
+                              “ Outstanding job and exceeded all expectations. It was a pleasure
+                              to work with them on a sizable first project and am looking
+                              forward to start the next one asap.”
+                           </blockquote>
+                           <figcaption>Michael Hopkins</figcaption>
+                        </figure>
+                     </div>
+                     <div class="swiper-slide testimonials__item">
+                        <figure class="testimonials__quote">
+                           <blockquote>
+                              But web browsers aren’t like web servers. If your back-end code is getting so big that
+                              it’s starting to run
+                              noticably slowly, you can throw more computing power at it by scaling up your server.
+                           </blockquote>
+                           <figcaption>Jeremy Keith</figcaption>
+                        </figure>
+                     </div>
+                     <div class="swiper-slide testimonials__item">
+                        <figure class="testimonials__quote">
+                           <blockquote>
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sed laudantium quos
+                              explicabo harum tempore sit commodi dignissimos earum reprehenderit!
+                           </blockquote>
+                           <figcaption>Jeremy Keith</figcaption>
+                        </figure>
+                     </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="clients">
+         <div class="container">
+            <div class="clients__body">
+               <div class="client"><img src="img/client1.png" alt="Client"></div>
+               <div class="client"><img src="img/client2.png" alt="Client"></div>
+               <div class="client"><img src="img/client3.png" alt="Client"></div>
+               <div class="client"><img src="img/client4.png" alt="Client"></div>
+               <div class="client"><img src="img/client1.png" alt="Client"></div>
+            </div>
+         </div>
+      </section>
    </main>
 
    <div class="burger">
@@ -308,6 +361,7 @@
       </div>
    </div>
 </footer>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="scripts/script.js"></script>
 </body>
 

@@ -62,3 +62,15 @@ document.querySelector(".workProcess__poster").addEventListener("click", functio
    let src = player.getAttribute("src");  // Запоминаем источник видео
    player.setAttribute("src", src + "&autoplay=1");   // Запускаем его через автоплей
 })
+
+/* Слайдер */
+
+const swiper = new Swiper('.swiper-container', {
+   loop: true,
+   pagination: {
+      el: '.swiper-pagination',
+   },
+   autoplay: {
+      delay: 5000,
+   },
+});
